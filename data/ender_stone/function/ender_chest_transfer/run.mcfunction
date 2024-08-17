@@ -1,0 +1,9 @@
+data remove storage ender_stone:ender_chest_transfer success
+
+# try to transfer the item into each slot of the hopper until one hits
+# if it hits, storage ender_stone:ender_chest_transfer.success will be given a value
+$execute unless data storage ender_stone:ender_chest_transfer success store success storage ender_stone:ender_chest_transfer success byte 1 run function ender_stone:ender_chest_transfer/switch { slot: 0, ender_slot: $(ender_slot), item_id: "$(item_id)", item_components: $(item_components) }
+$execute unless data storage ender_stone:ender_chest_transfer success store success storage ender_stone:ender_chest_transfer success byte 1 run function ender_stone:ender_chest_transfer/switch { slot: 1, ender_slot: $(ender_slot), item_id: "$(item_id)", item_components: $(item_components) }
+$execute unless data storage ender_stone:ender_chest_transfer success store success storage ender_stone:ender_chest_transfer success byte 1 run function ender_stone:ender_chest_transfer/switch { slot: 2, ender_slot: $(ender_slot), item_id: "$(item_id)", item_components: $(item_components) }
+$execute unless data storage ender_stone:ender_chest_transfer success store success storage ender_stone:ender_chest_transfer success byte 1 run function ender_stone:ender_chest_transfer/switch { slot: 3, ender_slot: $(ender_slot), item_id: "$(item_id)", item_components: $(item_components) }
+$execute unless data storage ender_stone:ender_chest_transfer success store success storage ender_stone:ender_chest_transfer success byte 1 run function ender_stone:ender_chest_transfer/switch { slot: 4, ender_slot: $(ender_slot), item_id: "$(item_id)", item_components: $(item_components) }
